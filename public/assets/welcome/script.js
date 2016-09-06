@@ -1,11 +1,11 @@
  jQuery(document).ready(function($) {
  
-    $(".scroll a, .navbar-brand, .gototop,.explore").click(function(event){   
-    event.preventDefault();
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600,'swing');
-    $(".scroll li").removeClass('active');
-    $(this).parents('li').toggleClass('active');
-    });
+    //$(".scroll a, .navbar-brand, .gototop,.explore").click(function(event){
+    //event.preventDefault();
+    //$('html,body').animate({scrollTop:$(this.hash).offset().top}, 600,'swing');
+    //$(".scroll li").removeClass('active');
+    //$(this).parents('li').toggleClass('active');
+    //});
     });
 
 
@@ -22,20 +22,20 @@ var wow = new WOW(
     live:         true        // act on asynchronously loaded content (default is true)
   }
 );
-wow.init();
+//wow.init();
 
 
 
 
-$('.carousel').swipe( {
-     swipeLeft: function() {
-         $(this).carousel('next');
-     },
-     swipeRight: function() {
-         $(this).carousel('prev');
-     },
-     allowPageScroll: 'vertical'
- });
+//$('.carousel').swipe( {
+//     swipeLeft: function() {
+//         $(this).carousel('next');
+//     },
+//     swipeRight: function() {
+//         $(this).carousel('prev');
+//     },
+//     allowPageScroll: 'vertical'
+// });
 
 
 

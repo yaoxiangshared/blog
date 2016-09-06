@@ -18,3 +18,6 @@ Route::get('home',function(){
     return view('home');
 
 });
+Route::get('list',[
+    'as'=>'list',
+    'uses'=>'ListController@index']);

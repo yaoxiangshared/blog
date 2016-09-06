@@ -56,13 +56,6 @@
 </div>
 
 
-
-
-
-
-
-
-
 <!-- works -->
 <div id="works"  class=" clearfix grid">
     <figure class="effect-oscar  wowload fadeInUp">
@@ -70,7 +63,7 @@
         <figcaption>
             <h2>常规简历</h2>
             <p>这里有最通用的简历模板<br>
-                <a href="{{URL::asset('assets/images/welcome/portfolio/1.jpg')}}" title="1" data-gallery>查看全部</a></p>
+                <a target="_blank" href="{{route('list',[])}}" title="1" >查看全部</a></p>
         </figcaption>
     </figure>
     <figure class="effect-oscar  wowload fadeInUp">
@@ -286,7 +279,7 @@
 
 
 <!-- custom script -->
-<script src="{{URL::asset('assets/welcome/script.js')}}"></script>
+{{--<script src="{{URL::asset('assets/welcome/script.js')}}"></script>--}}
 
 </body>
 </html>
