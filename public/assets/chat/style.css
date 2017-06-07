@@ -1,0 +1,93 @@
+@charset "UTF-8";
+.wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+.main{
+    background-image: url('../images/bg.jpg');
+    height: calc(100% - 50px);
+    /*position: absolute;*/
+    background-size:100% 100%;
+}
+.logo{
+    width: 200px;
+    margin:  auto;
+}
+
+.logo img{
+    width: inherit;
+}
+
+.slogan{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.slogan h2{
+    text-align: center;
+    font-size:100px;
+    color: #ff0951;
+}
+
+.button {
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    margin: 50px auto;
+    width: 100%;
+    background: transparent;
+    text-align: center;
+}
+
+.button input{
+    color: #ff0951;
+    font-size: 40px;
+    background-color: transparent;
+    border: 1px solid #ff0951;
+    border-radius: 4px;
+    /*cursor: pointer;*/
+    outline:0;
+}
+.sendBox{
+    height: 50px;
+}
+.sendBox div{
+    font-size: 16px;
+ display: table-cell;
+    height: inherit;
+    padding: 0 3px;
+    background: #eff0f1;
+
+    /*width: 100%;*/
+
+ }
+.sendBox input{
+    width: 100%;
+    height: 100%;
+    background: #eff0f1;
+    border: 0;
+    outline:0;
+
+}
+.sendBox input[type=button]{
+    color: #ff5e3a;
+    font-weight: bold
+}
+.sendText{
+    width: 100%;
+    padding: 5px 0 !important;
+}
+.sendText input{
+    box-sizing: border-box;
+    border: 1px solid #bebfc0;
+     border-radius: 5px;
+
+}
+.changeButton{
+}
