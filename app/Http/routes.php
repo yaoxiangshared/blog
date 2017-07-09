@@ -25,4 +25,14 @@ Route::get(
         'uses'=>'ListController@index'
     ]
 );
+Route::get(
+  'total',
+    [
+        'as'=>'total',
+        'uses'=>'ListController@total'
+    ]
+
+);
 Route::get('deploy',['as'=>'list','uses'=>'DeployController@index']);
+
+Route::get('chat',['as'=>'chat','uses'=>'ChatController@index']);

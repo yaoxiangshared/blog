@@ -14,7 +14,13 @@ use App\Resume;
 class ListController extends Controller{
 
     public function index(){
-        $resumeList=Resume::all();
+//        $resumeList=Resume::all();
         return view('list',['resumeList'=>$resumeList]);
+    }
+
+    public  function total(){
+
+        echo json_encode(array('total'=>455,'pig'=>1234));exit();
+        return view('home');
     }
 }

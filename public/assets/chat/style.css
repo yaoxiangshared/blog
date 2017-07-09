@@ -10,14 +10,18 @@
     overflow: hidden;
 }
 .main{
-    background-image: url('../images/bg.jpg');
-    height: calc(100% - 50px);
-    /*position: absolute;*/
+    background-image: url('../chat/images/bg.jpg');
+    height: 100%;
+    width: 100%;
+    position: relative;
     background-size:100% 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 .logo{
     width: 200px;
     margin:  auto;
+    padding-top: 50px;
 }
 
 .logo img{
@@ -39,7 +43,7 @@
     /*position: absolute;*/
     /*left: 0;*/
     /*right: 0;*/
-    margin: 50px auto;
+    margin: 50px auto 100px auto ;
     width: 100%;
     background: transparent;
     text-align: center;
@@ -54,8 +58,48 @@
     /*cursor: pointer;*/
     outline:0;
 }
+.message{
+    /*background-color: #00a9c6;*/
+    /*max-width: 500px;*/
+    border-radius: 10px 10px 10px 10px;
+    bottom: 0;
+    /*position: ;*/
+    width: inherit;
+}
+.message blockquote{
+    background-color: rgba(255,255,255,0.2);
+    /*padding: 10px 10px 0 10px;*/
+    /*height: 70px;*/
+    border-radius: 10px 10px 10px 10px;
+    max-width: 500px;
+    /*background-color: rgba(255,255,255,0.2);*/
+    border: 0;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+blockquote>div{
+    clear: both;
+}
+.message blockquote div.me{
+    float: right;
+    display: block;
+    /*clear: both;*/
+}
+.message blockquote div.start{
+    width: 100%;
+    text-align: center;
+}
+
+.message blockquote div.stranger{
+    float: left;
+    display: block;
+    /*clear: both;*/
+}
 .sendBox{
     height: 50px;
+    display: none;
 }
 .sendBox div{
     font-size: 16px;

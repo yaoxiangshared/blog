@@ -80,9 +80,21 @@
         </label>
         <button class="btn btn-large btn-primary" type="submit">登录</button>
     </form>
+    <h1 id="total">total</h1>
+    <h1 id="pig">pig</h1>
 
 </div>
 <script src="{{URL::asset('assets/third/jquery/jquery.js')}}"></script>
 <script src="{{URL::asset('assets/third/bootstrap/js/bootstrap.js')}}" type="text/javascript" ></script>
+<script>
+    $(document).ready(function (){
+        $.getJSON("/total",function(res){
+            console.log(res.total);
+            console.log(res.pig);
+            $('#total').text(res.total);
+            $('#pig').text(res.pig);
+        });
+    });
+</script>
 </body>
 </html>
