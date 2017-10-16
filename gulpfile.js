@@ -1,3 +1,4 @@
+process.env.DISABLE_NOTIFIER = true;
 var elixir = require('laravel-elixir');
 
 /*
@@ -10,7 +11,11 @@ var elixir = require('laravel-elixir');
  | file for our application, as well as publishing vendor resources.
  |
  */
-
+elixir.config.js.browserify.transformers.push({
+    name: 'vueify',
+    options: {}
+});
 elixir(function(mix) {
-    mix.sass('app.scss');
+    //mix.sass('app.scss');
+    mix.browserify('entries/hello.js', 'public/js/hello.js');
 });

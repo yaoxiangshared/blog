@@ -18,6 +18,9 @@ Route::get('home',function(){
     return view('home');
 
 });
+Route::get('vue',function(){
+   return view('vue');
+});
 Route::get(
     'list',
     [
