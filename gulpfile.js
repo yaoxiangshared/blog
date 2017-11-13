@@ -17,5 +17,5 @@ elixir.config.js.browserify.transformers.push({
 });
 elixir(function(mix) {
     //mix.sass('app.scss');
-    mix.browserify('entries/hello.js', 'public/js/hello.js');
+    //mix.browserify('entries/hello.js', 'public/js/hello.js');
 });

@@ -9,5 +9,5 @@
 <div id='app'></div>
 </body>
 {{-- 引进编译后的js文件 --}}
-<script src="{{ asset('/js/hello.js')}}" charset="utf-8"></script>
+<script src="{{ asset('/js/page/index.js')}}" charset="utf-8"></script>
 </html>

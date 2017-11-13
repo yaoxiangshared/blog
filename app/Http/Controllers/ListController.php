@@ -14,7 +14,7 @@ use App\Resume;
 class ListController extends Controller{
 
     public function index(){
-//        $resumeList=Resume::all();
+        $resumeList=Resume::all();
         return view('list',['resumeList'=>$resumeList]);
     }
 
