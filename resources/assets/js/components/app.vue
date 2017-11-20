@@ -19,14 +19,14 @@
     import Vue from "vue";
     // import { Button,Notification } from 'element-ui';
     // import 'element-ui/lib/theme-default/index.css';
-    import Util from "../js/commonUtil";
+//    import Util from "../js/commonUtil";
     import Header from "./header.vue";
     import Footer from "./footer.vue";
     import Sidebar from "./sidebar.vue";
     import 'bootstrap/dist/css/bootstrap.css'
     import 'font-awesome/css/font-awesome.css'
-    import '../css/admin-lte.css';
-    import '../css/skin-blue.css'
+    import '../../css/admin-lte.css';
+    import '../../css/skin-blue.css'
     // require.ensure(
     //     ["../../../first.js","../../../commonUtil.js"],
     //     function () {

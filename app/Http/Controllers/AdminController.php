@@ -6,8 +6,11 @@
  * Time: 22:32
  */
 namespace App\Http\Controllers;
-use Symfony\Component\HttpKernel\Tests\Controller;
 
-class AdminControllers extends Controller{
+class AdminController extends Controller{
 
+    public function index(){
+//        return view('chat');
+        return view('/admin/welcome/index');
+    }
 }

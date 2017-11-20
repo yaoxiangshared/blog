@@ -39,3 +39,4 @@ Route::get(
 Route::get('deploy',['as'=>'list','uses'=>'DeployController@index']);
 
 Route::get('chat',['as'=>'chat','uses'=>'ChatController@index']);
+Route::get('admin',['as'=>'admin','uses'=>'AdminController@index']);

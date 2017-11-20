@@ -1,0 +1,17 @@
+.app{
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    margin: 10px;
+}
+.mar_left_10{
+    margin-left: 10px;
+}
+
+.mar_bottom_10{
+    margin-bottom: 10px;
+}
+
+.mar_top_10{
+    margin-top: 10px;
+}
+
