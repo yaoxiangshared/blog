@@ -7,7 +7,9 @@
     "require": {
         "php": ">=5.5.9",
         "laravel/framework": "5.2.*",
-        "cboden/ratchet": "^0.3.6"
+        "cboden/ratchet": "^0.3.6",
+        "php-curl-class/php-curl-class":"8.0.0",
+        "predis/predis": "*"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -47,5 +49,11 @@
     },
     "config": {
         "preferred-install": "dist"
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
     }
 }
